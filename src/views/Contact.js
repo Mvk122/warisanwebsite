@@ -11,6 +11,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 import HeaderAppBar from '../components/HeaderAppBar';
+import Footer from '../components/Footer.js';
 import constants from '../constants.js';
 
 const useStyles = makeStyles((theme) => ({
@@ -38,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Contact = props => {
-    const { history } = props;
     const classes = useStyles();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -126,6 +126,7 @@ const Contact = props => {
                     </Grid>
                     </form>
             </Grid>
+            <Footer />
         </div>
     )
 }

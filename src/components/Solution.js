@@ -21,7 +21,7 @@ function Solution({solutionText, solutionDescription, solutionImg}) {
                 <Grid container spacing={1} direction="row" justify="flex-start" alignItems="flex-start" className={classes.itemgrid}>
                     <Grid item xs={12}>
                         <div style={{textAlign: "center"}}>
-                            <img src={solutionImg} width="70%"/>
+                            <img src={solutionImg} width="70%" alt="solution illustration"/>
                             <Typography variant="h4" gutterBottom>
                                 {solutionText}
                             </Typography>

@@ -14,6 +14,7 @@ import Grid from '@material-ui/core/Grid';
 
 import Solution from '../components/Solution.js';
 import HeaderAppBar from '../components/HeaderAppBar.js';
+import Footer from '../components/Footer.js';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -103,6 +104,7 @@ const Frontpage = props => {
                     <Solution solutionText="First Step Solutions" solutionDescription="Looking to start your own business but not sure where to turn? Need help planning or executing your next project? Let us guide you. Our FIRST Step Solutions provide budding entrepreneurs with operational, analytical and strategic help to get their start-up off the ground efficiently." solutionImg={solutionimg3}/>
                 </Grid>
             </Grid>
+            <Footer />
         </div>
     )
 };
