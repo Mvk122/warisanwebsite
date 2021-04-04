@@ -4,9 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
-import AddAPhotoIcon from '@material-ui/icons/AddAPhoto';
-import SolutionImg from '../img/solutionimg.png'
-
 const useStyles = makeStyles((theme) => ({
     itemgrid: {
         padding: theme.spacing(2)
@@ -16,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-function Solution({solutionText, solutionDescription}) {
+function Solution({solutionText, solutionDescription, solutionImg}) {
     const classes = useStyles();
     return (
         <React.Fragment>
@@ -24,7 +21,7 @@ function Solution({solutionText, solutionDescription}) {
                 <Grid container spacing={1} direction="row" justify="flex-start" alignItems="flex-start" className={classes.itemgrid}>
                     <Grid item xs={12}>
                         <div style={{textAlign: "center"}}>
-                            <img src={SolutionImg} width="70%"/>
+                            <img src={solutionImg} width="70%"/>
                             <Typography variant="h4" gutterBottom>
                                 {solutionText}
                             </Typography>

@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 import HeaderAppBar from '../components/HeaderAppBar';
 import constants from '../constants.js';
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     },
     itemgrid: {
         paddingTop: theme.spacing(3),
-        padding: theme.spacing(2)
+        padding: theme.spacing(2),
     },
     icons: {
         fontSize: "3em",
@@ -49,7 +50,10 @@ const Contact = props => {
     function handleSubmit(event){
         event.preventDefault();
         setResponsemessage("Your message has been delivered to us, we will contact you by email shortly!");
-        console.log("Submitted")
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
     }
 
     return (
@@ -63,7 +67,7 @@ const Contact = props => {
                         </Typography>
                     </div>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                     <div style={{textAlign:"center"}}>
                         <MailOutlineIcon className={classes.icons} />
                         <Typography variant="subtitle1" gutterBottom>
@@ -71,7 +75,15 @@ const Contact = props => {
                         </Typography>
                     </div>                    
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={4}>
+                    <div style={{textAlign:"center"}}>
+                        <LocationOnIcon className={classes.icons} />
+                        <Typography variant="subtitle1" gutterBottom>
+                            {constants.location}
+                        </Typography>
+                    </div>                    
+                </Grid>
+                <Grid item xs={4}>
                     <div style={{textAlign:"center"}}>
                         <PhoneIcon className={classes.icons}/>
                         <Typography variant="subtitle1" gutterBottom>
