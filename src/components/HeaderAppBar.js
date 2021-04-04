@@ -99,7 +99,7 @@ const HeaderAppBar = props => {
                     <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" className={classes.title}>
-                    WARISAN CONSULTING
+                    WARISAN STRATEGIC ADVISORY
                 </Typography>
                     <Button color="inherit" onClick={()=> history.push("/")}>HOME</Button>
                     <Button color="inherit">ABOUT US</Button>
