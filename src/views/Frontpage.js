@@ -1,19 +1,17 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
+
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+
 
 import headerimage from "../img/headerimg.png";
 
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
 
 import Solution from '../components/Solution.js';
+import HeaderAppBar from '../components/HeaderAppBar.js';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -49,26 +47,6 @@ const useStyles = makeStyles((theme) => ({
 const Frontpage = props => {
     const { history } = props
     const classes = useStyles();
- 
-    function HeaderAppBar() {
-        return (
-            <AppBar position="static" className={classes.header}>
-                <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon />
-                    </IconButton>
-                <Typography variant="h6" className={classes.title}>
-                    WARISAN CONSULTING
-                </Typography>
-                    <Button color="inherit">ABOUT US</Button>
-                    <Button color="inherit">SOLUTIONS</Button>
-                    <Button color="inherit">TESTIMONIALS</Button>
-                    <Button color="inherit">BLOG</Button>
-                    <Button color="inherit">PORTFOLIOS</Button>
-                </Toolbar>
-            </AppBar>
-        )
-    }
 
     function HeroText() {
         return (
@@ -82,7 +60,7 @@ const Frontpage = props => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh sit amet hendrerit venenatis. Aenean at sem et justo laoreet faucibus. Curabitur nibh turpis, fermentum 
                     </Typography>
                     <div style={{paddingTop:"1em"}}>
-                    <Button variant="contained" color="primary">
+                    <Button variant="contained" color="primary" onClick={()=> history.push("/contact")}>
                         CONTACT US
                     </Button> 
                     <Button color="primary">
