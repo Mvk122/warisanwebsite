@@ -3,6 +3,7 @@ import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 
 const useStyles = makeStyles((theme) => ({
     itemgrid: {
@@ -10,10 +11,15 @@ const useStyles = makeStyles((theme) => ({
     },
     cardicon: {
         fontSize: "100px"
+    },
+    checkmark: {
+        color: theme.palette.primary.main,
+        transform: "translate(0,25%)"
     }
 }))
 
-function Solution({solutionText, solutionDescription, solutionImg}) {
+//solutionText: str | solutionDescription: str | solutionImg: image | taglines: array of strings
+function Solution({solutionText, solutionDescription, solutionImg, taglines}) {
     const classes = useStyles();
     return (
         <React.Fragment>
@@ -30,6 +36,13 @@ function Solution({solutionText, solutionDescription, solutionImg}) {
                             </Typography>
                         </div>
                     </Grid>
+                    {taglines.map((tagline) => (
+                        <Grid item xs={12} md={6}>
+                            <Typography variant="subtitle1" gutterBottom>
+                                <CheckCircleOutlineIcon className={classes.checkmark}/> {tagline}
+                            </Typography>
+                        </Grid>
+                    ))}
                 </Grid>
             </Box>
         </React.Fragment>

@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 import headerimage from "../img/headerimg.png";
+import client1 from '../img/clients/client1.png';
 
 import solutionimg1 from "../img/solution1.png";
 import solutionimg2 from "../img/solution2.png";
@@ -15,6 +16,7 @@ import Grid from '@material-ui/core/Grid';
 import Solution from '../components/Solution.js';
 import HeaderAppBar from '../components/HeaderAppBar.js';
 import Footer from '../components/Footer.js';
+import Client from '../components/Client.js';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -43,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
     servicesgrid: {
         paddingLeft: theme.spacing(10),
         paddingRight: theme.spacing(10),
+        paddingTop: theme.spacing(2),
         backgroundColor: "transparent"
     }
 }))
@@ -75,6 +78,61 @@ const Frontpage = props => {
         )
     }
 
+    function Clients() {
+        return (
+            <React.Fragment>
+                <Grid container spacing={5} direction="row" justify="flex-start" alignItems="flex-start" className={classes.servicesgrid}>
+                    <Grid item xs={12}>
+                    <div style={{textAlign:"center"}}>
+                        <Typography variant="h2" gutterBottom >
+                            Our Previous Clients
+                        </Typography>
+                    </div>
+                    </Grid>
+                    <Grid item xs={12} sm={4} md={3}>
+                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={client1} companyname="Google"/>
+                    </Grid>
+                    <Grid item xs={12} sm={4} md={3}>
+                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={client1} companyname="Google"/>
+                    </Grid>
+                    <Grid item xs={12} sm={4} md={3}>
+                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={client1} companyname="Google"/>
+                    </Grid>
+                    <Grid item xs={12} sm={4} md={3}>
+                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={client1} companyname="Google"/>
+                    </Grid>
+                </Grid>
+            </React.Fragment>
+        )
+    }
+
+    function Solutions() {
+        return (
+            <React.Fragment>
+                <Grid container spacing={5} direction="row" justify="flex-start" alignItems="flex-start" className={classes.servicesgrid}>
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Solution solutionText="S.H.I.F.T Consultancy"
+                            solutionDescription="Strategic, Holistic, Informative, Functional and Transformative. In today's dynamic economic landscape, it is imperative that businesses constantly evolve and transform to stay ahead of the curve. SHIFT is our premier end-to-end offering tailored for our SME clients to futureproof their businesses."
+                            solutionImg={solutionimg1}
+                            taglines={["Big Data Analytics", "Inventory Management", "Agile Development", "Data Migration"]}/>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Solution solutionText="Digital Media Management"
+                            solutionDescription="At Warisan we help our digital creator clients achieve their ambitions by providing a one-stop solution package that includes strategy, implementation, analytics and management." 
+                            solutionImg={solutionimg2}
+                            taglines={["Website Development", "SEO Management", "Digital Marketting", "Media Production", "Web Security", "Custom Software Solutions", "Content Management Services"]}/>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Solution solutionText="First Step Solutions"
+                            solutionDescription="Looking to start your own business but not sure where to turn? Need help planning or executing your next project? Let us guide you. Our FIRST Step Solutions provide budding entrepreneurs with operational, analytical and strategic help to get their start-up off the ground efficiently."
+                            solutionImg={solutionimg3}
+                            taglines={["Business Consultation", "Finance Consultation", "Business Registration"]}/>
+                    </Grid>
+                </Grid>
+            </React.Fragment>
+        )
+    }
+
     return (
         <div className={classes.root}>
             <HeaderAppBar />
@@ -93,17 +151,8 @@ const Frontpage = props => {
                     </div>
                 </Grid>
             </Grid>
-            <Grid container spacing={5} direction="row" justify="flex-start" alignItems="flex-start" className={classes.servicesgrid}>
-            <Grid item xs={12} sm={6} md={4}>
-                    <Solution solutionText="S.H.I.F.T Consultancy" solutionDescription="Strategic, Holistic, Informative, Functional and Transformative. In today's dynamic economic landscape, it is imperative that businesses constantly evolve and transform to stay ahead of the curve. SHIFT is our premier end-to-end offering tailored for our SME clients to futureproof their businesses." solutionImg={solutionimg1}/>
-                </Grid>
-                <Grid item xs={12} sm={6} md={4}>
-                    <Solution solutionText="Digital Media Management" solutionDescription="At Warisan we help our digital creator clients achieve their ambitions by providing a one-stop solution package that includes strategy, implementation, analytics and management."  solutionImg={solutionimg2}/>
-                </Grid>
-                <Grid item xs={12} sm={6} md={4}>
-                    <Solution solutionText="First Step Solutions" solutionDescription="Looking to start your own business but not sure where to turn? Need help planning or executing your next project? Let us guide you. Our FIRST Step Solutions provide budding entrepreneurs with operational, analytical and strategic help to get their start-up off the ground efficiently." solutionImg={solutionimg3}/>
-                </Grid>
-            </Grid>
+            <Solutions />
+            <Clients />
             <Footer />
         </div>
     )
