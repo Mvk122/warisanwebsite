@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { useHistory } from "react-router-dom";
+import Link from '@material-ui/core/Link';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -67,20 +68,14 @@ const HeaderAppBar = props => {
                                 <ListItemText primary="HOME"></ListItemText>
                             </ListItem>
                             <ListItem button>
-                                <ListItemText primary="ABOUT US"></ListItemText>
-                            </ListItem>
-                            <ListItem button>
                                 <ListItemText primary="SOLUTIONS"></ListItemText>
                             </ListItem>
                             <ListItem button>
-                                <ListItemText primary="TESTIMONIALS"></ListItemText>
+                                <ListItemText primary="TESTIMONIALS" onClick={() => history.push("/testimonials")}></ListItemText>
                             </ListItem>                            
                             <ListItem button>
                                 <ListItemText primary="BLOG"></ListItemText>
                             </ListItem>                            
-                            <ListItem button>
-                                <ListItemText primary="PORTFOLIO"></ListItemText>
-                            </ListItem>
                             <ListItem button onClick={() => history.push("/contact")}>
                                 <ListItemText primary="CONTACT US"></ListItemText>
                             </ListItem>
@@ -99,14 +94,14 @@ const HeaderAppBar = props => {
                     <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" className={classes.title}>
-                    WARISAN STRATEGIC ADVISORY
+                    <Link href="/" color="inherit" style={{ textDecoration: 'none' }}>
+                        WARISAN STRATEGIC ADVISORY
+                    </Link>
                 </Typography>
                     <Button color="inherit" onClick={()=> history.push("/")}>HOME</Button>
-                    <Button color="inherit">ABOUT US</Button>
                     <Button color="inherit">SOLUTIONS</Button>
-                    <Button color="inherit">TESTIMONIALS</Button>
+                    <Button color="inherit" onClick={() => history.push("/testimonials")}>TESTIMONIALS</Button>
                     <Button color="inherit">BLOG</Button>
-                    <Button color="inherit">PORTFOLIO</Button>
                     <Button color="inherit" onClick={()=> history.push("/contact")}>CONTACT US</Button>
                 </Toolbar>
         </AppBar>

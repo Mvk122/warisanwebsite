@@ -5,8 +5,6 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 
-import { useHistory } from "react-router-dom";
-
 const useStyles = makeStyles((theme) => ({
     client: {
         textAlign: "center",
@@ -19,7 +17,6 @@ function Client({description, link, logo, companyname}) {
     const [boxwidth, setBoxwidth] = useState(0)
     const [showndescription, setShowndescription] = useState("");
     const [shownName, setShownname] = useState("");
-    const [learnmore, setLearnmore] = useState("")
 
     //true if enter, false if leaving
     function mouseOverEvent(enter) {
@@ -36,8 +33,7 @@ function Client({description, link, logo, companyname}) {
 
     return (
         <Box border={boxwidth} borderColor="primary.main" borderRadius={16} onMouseEnter={()=> mouseOverEvent(true)} onMouseLeave={()=> mouseOverEvent(false)} onClick={()=> console.log("swag")}>
-            <Link href="/contact" color="inherit" style={{ textDecoration: 'none' }}>
-
+        <Link href="/testimonials" color="inherit" style={{ textDecoration: 'none' }}>
         <div className={classes.client}>
             <img src={logo} alt="company logo" style={{resizeMode:"contain", flex:1, maxWidth:"100%", heigth:null}}/>
             <Typography variant="h6" gutterBottom>

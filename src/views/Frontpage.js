@@ -63,14 +63,11 @@ const Frontpage = props => {
                 </Typography>
                 <div style={{width: "50%"}}>
                     <Typography variant="subtitle1" gutterBottom>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh sit amet hendrerit venenatis. Aenean at sem et justo laoreet faucibus. Curabitur nibh turpis, fermentum 
+                    Consulting tends to be a pricey option available to corporates with deep coffers. At Warisan we aim to deliver similar strategic value at affordable rates to Malaysia's SMEs in an effort to catalyse the drive into becoming a high-income nation. 
                     </Typography>
                     <div style={{paddingTop:"1em"}}>
                     <Button variant="contained" color="primary" onClick={()=> history.push("/contact")}>
                         CONTACT US
-                    </Button> 
-                    <Button color="primary">
-                        LEARN MORE
                     </Button> 
                     </div>
                 </div>
