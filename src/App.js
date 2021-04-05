@@ -6,7 +6,7 @@ import Contact from "./views/Contact";
 import Testimonials from "./views/Testimonials";
 
 function App() {
-document.title = "Warisan Consulting"
+document.title = "Warisan Strategic Advisory"
     return (
       <Router basename="/">
         <div>
