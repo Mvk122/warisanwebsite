@@ -46,7 +46,10 @@ const useStyles = makeStyles((theme) => ({
     appbaricon: {
         fontSize: "40px",
         color: "#ffffe3"
-    }
+    },
+    appButton: {
+        [theme.breakpoints.down('xs')]: { display: 'none', }
+    },
 }))
 
 const HeaderAppBar = props => {
@@ -98,11 +101,11 @@ const HeaderAppBar = props => {
                         WARISAN STRATEGIC ADVISORY
                     </Link>
                 </Typography>
-                    <Button color="inherit" onClick={()=> history.push("/")}>HOME</Button>
-                    <Button color="inherit">SOLUTIONS</Button>
-                    <Button color="inherit" onClick={() => history.push("/testimonials")}>TESTIMONIALS</Button>
-                    <Button color="inherit">BLOG</Button>
-                    <Button color="inherit" onClick={()=> history.push("/contact")}>CONTACT US</Button>
+                    <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/")}>HOME</Button>
+                    <Button color="inherit" className={classes.appButton} >SOLUTIONS</Button>
+                    <Button color="inherit" className={classes.appButton} onClick={() => history.push("/testimonials")}>TESTIMONIALS</Button>
+                    <Button color="inherit" className={classes.appButton} >BLOG</Button>
+                    <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/contact")}>CONTACT US</Button>
                 </Toolbar>
         </AppBar>
     )

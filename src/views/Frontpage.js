@@ -43,11 +43,34 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: theme.spacing(1)
     },
     servicesgrid: {
-        paddingLeft: theme.spacing(10),
-        paddingRight: theme.spacing(10),
-        paddingTop: theme.spacing(2),
-        backgroundColor: "transparent"
+        [theme.breakpoints.down('md')]: { 
+            paddingLeft: theme.spacing(1),
+            paddingRight: theme.spacing(1),
+            paddingTop: theme.spacing(2),
+            backgroundColor: "transparent"
+        },
+        [theme.breakpoints.up('md')] : {
+            paddingLeft: theme.spacing(10),
+            paddingRight: theme.spacing(10),
+            paddingTop: theme.spacing(2),
+            backgroundColor: "transparent"
+        }
+    },
+    herodiv : {
+        [theme.breakpoints.down('md')]: {
+            width: "100%",
+            textAlign: "center"
+        },
+        [theme.breakpoints.up('md')]: {
+            width: "50%",
+        },
+    },
+    herotext : {
+        [theme.breakpoints.down('md')]: {
+            textAlign: "center"
+        },
     }
+
 }))
 
 const Frontpage = props => {
@@ -57,11 +80,11 @@ const Frontpage = props => {
     function HeroText() {
         return (
             <React.Fragment>
-                <Typography variant="h2" gutterBottom>
+                <Typography variant="h2" gutterBottom className={classes.herotext}>
                     WARISAN STRATEGIC 
                     <br/> ADVISORY
                 </Typography>
-                <div style={{width: "50%"}}>
+                <div className={classes.herodiv}>
                     <Typography variant="subtitle1" gutterBottom>
                     Consulting tends to be a pricey option available to corporates with deep coffers. At Warisan we aim to deliver similar strategic value at affordable rates to Malaysia's SMEs in an effort to catalyse the drive into becoming a high-income nation. 
                     </Typography>

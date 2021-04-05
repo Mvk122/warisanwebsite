@@ -27,14 +27,22 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "3em",
     },
     textentry: {
-        width: "70em",
+        width: "100%",
     },
     inputtheme: {
         color: "#ffffe3"
     },
     submitbutton: {
-        width: "70em",
+        width: "100%",
         paddingTop: theme.spacing(1)
+    },
+    inputdiv: {
+        [theme.breakpoints.down('md')]: {
+            width: "95%",
+        },
+        [theme.breakpoints.up('md')]: {
+            width: "70%",
+        },
     }
 }))
 
@@ -67,7 +75,7 @@ const Contact = props => {
                         </Typography>
                     </div>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={4}>
                     <div style={{textAlign:"center"}}>
                         <MailOutlineIcon className={classes.icons} />
                         <Typography variant="subtitle1" gutterBottom>
@@ -75,7 +83,7 @@ const Contact = props => {
                         </Typography>
                     </div>                    
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={4}>
                     <div style={{textAlign:"center"}}>
                         <LocationOnIcon className={classes.icons} />
                         <Typography variant="subtitle1" gutterBottom>
@@ -83,7 +91,7 @@ const Contact = props => {
                         </Typography>
                     </div>                    
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={4}>
                     <div style={{textAlign:"center"}}>
                         <PhoneIcon className={classes.icons}/>
                         <Typography variant="subtitle1" gutterBottom>
@@ -92,7 +100,8 @@ const Contact = props => {
                     </div>                    
                 </Grid>
             </Grid>
-            <Grid container spacing={1} direction="column" justify="center" alignItems="center">
+            <Grid container spacing={1} direction="row" justify="center" alignItems="center">
+                <div className={classes.inputdiv}>
                     <form noValidate autoComplete="off" onSubmit={handleSubmit}>
                     <Grid item xs={12}>
                         <div style={{padding:"5px", width:"100%"}}>
@@ -125,6 +134,7 @@ const Contact = props => {
                         </div>
                     </Grid>
                     </form>
+                </div>
             </Grid>
             <Footer />
         </div>
