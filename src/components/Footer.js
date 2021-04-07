@@ -71,13 +71,13 @@ const Footer = props => {
                 </Grid>
                 <Grid item xs={6}>
                     <div className={classes.links}>
-                        <IconButton color="inherit" href={constants.linkdin} target="_blank">
+                        <IconButton color="inherit" href={constants.linkdin} target="_blank" aria-label="Link to our Linkdin profile" rel="noreferrer">
                             <LinkedInIcon className={classes.icons} />
                         </IconButton>
-                        <IconButton color="inherit" >
+                        <IconButton color="inherit" aria-label="Link to our Whatsapp Business Contact" >
                             <WhatsAppIcon className={classes.icons} />
                         </IconButton>
-                        <IconButton color="inherit" >
+                        <IconButton color="inherit" aria-label="Link to our Facebook" >
                             <FacebookIcon className={classes.icons} />
                         </IconButton>
                     </div>
