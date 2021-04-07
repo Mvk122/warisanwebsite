@@ -38,7 +38,12 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: "none"
     },
     headerImage: {
-        transform: "translate(100px, 0px)",
+        [theme.breakpoints.up('md')] : {
+            transform: "translate(100px, 0px)",
+        },
+        [theme.breakpoints.down('md')] : {
+            transform: "translate(50px, 0px)",
+        },
     },
     itemgrid: {
         paddingTop: theme.spacing(6),
