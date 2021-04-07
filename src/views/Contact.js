@@ -14,6 +14,8 @@ import HeaderAppBar from '../components/HeaderAppBar';
 import Footer from '../components/Footer.js';
 import constants from '../constants.js';
 
+import { Helmet } from "react-helmet"
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -66,6 +68,11 @@ const Contact = props => {
 
     return (
         <div className={classes.root}>
+            <Helmet>
+                <title>Contact | Warisan Strategic Advisory</title>
+                <meta property="og:title" content="Home | Warisan Strategic Avisory" />
+                <meta property="og:description" content="Get in contact with Warisan Strategic Advisory to optimise your SME business for the new 4th industrial revolution" />
+            </Helmet>
             <HeaderAppBar />
             <Grid container spacing={0} direction="row" className={classes.itemgrid}>
                 <Grid item xs={12}>

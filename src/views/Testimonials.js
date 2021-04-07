@@ -9,6 +9,9 @@ import HeaderAppBar from '../components/HeaderAppBar';
 import Footer from '../components/Footer.js';
 import Testimony from '../components/Testimony.js';
 
+import { Helmet } from "react-helmet"
+
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -20,6 +23,9 @@ const Testimonials = props => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
+            <Helmet>
+                <title>Testimonials | Warisan Strategic Advisory</title>
+            </Helmet>
             <HeaderAppBar />
             <div style={{textAlign:"center"}}>
                 <Typography variant="h2" gutterBottom >

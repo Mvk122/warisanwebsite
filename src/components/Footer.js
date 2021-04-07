@@ -60,6 +60,11 @@ const Footer = props => {
                             </Link>
                         </Typography>
                         <Typography variant="subtitle1" gutterBottom>
+                            <Link href="/contact" color="inherit">
+                                Contact Us
+                            </Link>
+                        </Typography>
+                        <Typography variant="subtitle1" gutterBottom>
                             Created by Madhav Khandhar
                         </Typography>
                     </div>

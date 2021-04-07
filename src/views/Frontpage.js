@@ -18,6 +18,8 @@ import HeaderAppBar from '../components/HeaderAppBar.js';
 import Footer from '../components/Footer.js';
 import Client from '../components/Client.js';
 
+import { Helmet } from "react-helmet"
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -155,6 +157,11 @@ const Frontpage = props => {
 
     return (
         <div className={classes.root}>
+            <Helmet>
+                <title>Home | Warisan Strategic Advisory</title>
+                <meta property="og:title" content="Home | Warisan Strategic Avisory" />
+                <meta property="og:description" content=" Warisan Strategic Advisory is a consulting firm that offers affordable rates to Malaysian SME's, specialising in digital nurturing, marketting, big data analytics, first step solutions and more!" />
+            </Helmet>
             <HeaderAppBar />
             <Grid container spacing={1} direction="row" justify="flex-start" alignItems="flex-start" className={classes.itemgrid}>
                 <Grid item xs={12} md={4}>
