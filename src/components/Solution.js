@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "100px"
     },
     checkmark: {
-        color: theme.palette.primary.main,
+        color: theme.palette.secondary.main,
         transform: "translate(0,25%)"
     }
 }))
@@ -23,7 +23,7 @@ function Solution({solutionText, solutionDescription, solutionImg, taglines}) {
     const classes = useStyles();
     return (
         <React.Fragment>
-            <Box border={6} borderColor="primary.main" borderRadius={16}>
+            <Box border={6} borderColor="tertiary.main" borderRadius={16}>
                 <Grid container spacing={1} direction="row" justify="flex-start" alignItems="flex-start" className={classes.itemgrid}>
                     <Grid item xs={12}>
                         <div style={{textAlign: "center"}}>

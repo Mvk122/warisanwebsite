@@ -4,8 +4,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-import headerimage from "../img/headerimg.png";
+import headerimage from "../img/headerimg1.png";
 import client1 from '../img/clients/client1.png';
+import eaglelogo from '../img/clients/eaglelogo.png';
+import medinel from '../img/clients/medinel.png';
+import eeagleex from '../img/clients/eeagleex.png';
+
 
 import solutionimg1 from "../img/solution1.png";
 import solutionimg2 from "../img/solution2.png";
@@ -60,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
             paddingLeft: theme.spacing(10),
             paddingRight: theme.spacing(10),
             paddingTop: theme.spacing(2),
-            backgroundColor: "transparent"
+            backgroundColor: "transparent",
         }
     },
     herodiv : {
@@ -93,7 +97,7 @@ const Frontpage = props => {
                 </Typography>
                 <div className={classes.herodiv}>
                     <Typography variant="subtitle1" gutterBottom>
-                    Consulting tends to be a pricey option available to corporates with deep coffers. At Warisan we aim to deliver similar strategic value at affordable rates to Malaysia's SMEs in an effort to catalyse the drive into becoming a high-income nation. 
+                        Warisan Strategic Advisory is a Malaysian IT & Management Consultancy. We specialise in providing affordable, innovative digital business solutions for SMEs. Our bespoke range of technology, marketing and consulting solutions help SMEs transform and grow their business. If you are an SME please do get in touch for a no obligation discussion.
                     </Typography>
                     <div style={{paddingTop:"1em"}}>
                     <Button variant="contained" color="primary" onClick={()=> history.push("/contact")}>
@@ -117,13 +121,13 @@ const Frontpage = props => {
                     </div>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
-                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={client1} companyname="Google"/>
+                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={eaglelogo} companyname="Eagle Eyes Water"/>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
-                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={client1} companyname="Google"/>
+                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={medinel} companyname="Medinel"/>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
-                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={client1} companyname="Google"/>
+                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={eeagleex} companyname="EeagleEx"/>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
                         <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={client1} companyname="Google"/>
@@ -136,22 +140,28 @@ const Frontpage = props => {
     function Solutions() {
         return (
             <React.Fragment>
-                <Grid container spacing={5} direction="row" justify="flex-start" alignItems="flex-start" className={classes.servicesgrid}>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <Solution solutionText="S.H.I.F.T Consultancy"
-                            solutionDescription="Strategic, Holistic, Informative, Functional and Transformative. In today's dynamic economic landscape, it is imperative that businesses constantly evolve and transform to stay ahead of the curve. SHIFT is our premier end-to-end offering tailored for our SME clients to futureproof their businesses."
+                <Grid container spacing={5} direction="row" justify="stretch" alignItems="stretch" className={classes.servicesgrid}>
+                    <Grid item xs={12} sm={6} md={3}>
+                        <Solution solutionText="Data Analytics & Business Insights"
+                            solutionDescription="We help you clean, filter, and visualise data gathered from business operations. Our team will provide a comprehensive report and advise on business insights, trends and patterns enabling you to make better decisions."
                             solutionImg={solutionimg1}
                             taglines={["Big Data Analytics", "Inventory Management", "Agile Development", "Data Migration"]}/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item xs={12} sm={6} md={3}>
                         <Solution solutionText="Digital Media Management"
-                            solutionDescription="At Warisan we help our digital creator clients achieve their ambitions by providing a one-stop solution package that includes strategy, implementation, analytics and management." 
+                            solutionDescription="Our Digital Nurturing Programme builds and manages your e-commerce & digital presence and marketing platforms. This includes a custom e-commerce enabled website, Shopee, Lazada, Facebook, Instagram, Twitter, TikTok, YouTube, Spotify and more." 
                             solutionImg={solutionimg2}
-                            taglines={["Website Development", "SEO Management", "Digital Marketting", "Media Production", "Web Security", "Custom Software Solutions", "Content Management Services"]}/>
+                            taglines={["Website Development", "SEO Management", "Digital Marketting", "Media Production", "Web Security", "Custom Software Solutions", "Content Management Services", "e-Commerce Solutions"]}/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <Solution solutionText="First Step Solutions"
-                            solutionDescription="Looking to start your own business but not sure where to turn? Need help planning or executing your next project? Let us guide you. Our FIRST Step Solutions provide budding entrepreneurs with operational, analytical and strategic help to get their start-up off the ground efficiently."
+                    <Grid item xs={12} sm={6} md={3}>
+                        <Solution solutionText="Warisan Business Suite"
+                            solutionDescription="Our flagship solution designed for fledgling companies. WBS audits and optimises all business functions. It is ideal for SMEs and Start-Ups looking for an affordable and effective all-in-one solution that handles all their strategic, management, marketing and digital needs."
+                            solutionImg={solutionimg3}
+                            taglines={["Business Consultation", "Finance Consultation", "Business Registration"]}/>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={3}>
+                        <Solution solutionText="Distribution Optimisation"
+                            solutionDescription="Sales are the lifeblood of any SME. Our Distribution Optimisation solution audits, optimises and transforms your sales function. It is ideal for retail focused SMEs in the launch-phase or looking to expand."
                             solutionImg={solutionimg3}
                             taglines={["Business Consultation", "Finance Consultation", "Business Registration"]}/>
                     </Grid>

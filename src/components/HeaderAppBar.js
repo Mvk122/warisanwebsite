@@ -20,12 +20,16 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { ListItemIcon } from '@material-ui/core';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 
+import WarisanLogo from '../img/WSALOGO1.png';
+
 
 const useStyles = makeStyles((theme) => ({
     header: {
-        color: "#ffffe3",
+        color: "#00ADEE",
         background: "transparent",
-        boxShadow: "none"
+        boxShadow: "none",
+        width: "100%",
+        display: 'flex'
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -45,11 +49,21 @@ const useStyles = makeStyles((theme) => ({
     },
     appbaricon: {
         fontSize: "40px",
-        color: "#ffffe3"
+        color: "#00ADEE"
     },
     appButton: {
         [theme.breakpoints.down('xs')]: { display: 'none', }
     },
+    logo: {
+        [theme.breakpoints.down('xs')]: {
+            width: "10em"
+        },
+        [theme.breakpoints.up('sm')]: { 
+            paddingLeft: theme.spacing(4),
+            width: "17%"
+        }
+
+    }
 }))
 
 const HeaderAppBar = props => {
@@ -96,16 +110,16 @@ const HeaderAppBar = props => {
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={() => setDraweropen(true)}>
                     <MenuIcon />
                 </IconButton>
-                <Typography variant="h6" className={classes.title}>
-                    <Link href="/" color="inherit" style={{ textDecoration: 'none' }}>
-                        WARISAN STRATEGIC ADVISORY
-                    </Link>
-                </Typography>
+                <Link href="/">
+                    <img src={WarisanLogo} className={classes.logo} />
+                </Link>
+                <div style={{ display:'flex'}}>
                     <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/")}>HOME</Button>
                     <Button color="inherit" className={classes.appButton} >SOLUTIONS</Button>
                     <Button color="inherit" className={classes.appButton} onClick={() => history.push("/testimonials")}>TESTIMONIALS</Button>
                     <Button color="inherit" className={classes.appButton} >BLOG</Button>
-                    <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/contact")}>CONTACT US</Button>
+                    <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/contact")}>CONTACT</Button>
+                </div>
                 </Toolbar>
         </AppBar>
     )
