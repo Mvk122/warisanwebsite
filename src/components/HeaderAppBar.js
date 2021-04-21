@@ -85,7 +85,7 @@ const HeaderAppBar = props => {
                                 <ListItemText primary="TESTIMONIALS" onClick={() => history.push("/testimonials")}></ListItemText>
                             </ListItem>                            
                             <ListItem button>
-                                <ListItemText primary="INSIGHTS"></ListItemText>
+                                <ListItemText primary="INSIGHTS" onClick={() => history.push("/insights")}></ListItemText>
                             </ListItem>                            
                             <ListItem button onClick={() => history.push("/contact")}>
                                 <ListItemText primary="CONTACT US"></ListItemText>
@@ -110,7 +110,7 @@ const HeaderAppBar = props => {
                 <div style={{ display:'flex'}}>
                     <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/")}>HOME</Button>
                     <Button color="inherit" className={classes.appButton} onClick={() => history.push("/testimonials")}>TESTIMONIALS</Button>
-                    <Button color="inherit" className={classes.appButton} >INSIGHTS</Button>
+                    <Button color="inherit" className={classes.appButton} onClick={() => history.push("/insights")}>INSIGHTS</Button>
                     <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/contact")}>CONTACT</Button>
                 </div>
                 </Toolbar>
