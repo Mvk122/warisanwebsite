@@ -15,7 +15,7 @@ function Testimony({logo, companyname, description, }) {
         return (
             <Grid container spacing={1} direction="row" justify="flex-start" alignItems="flex-start" className={classes.itemgrid}>
                 <Grid item xs={12} sm={3}>
-                    <img src={logo} alt="company logo" style={{resizeMode:"contain", flex:1, maxWidth:"100%", heigth:null}}/>
+                    <img src={logo} alt="company logo" style={{resizeMode:"contain", flex:1, maxWidth:"100%", maxHeight:"20em"}}/>
                 </Grid>
                 <Grid item xs={12} sm={9}>
                     <div style={{paddingLeft: "2em"}}>

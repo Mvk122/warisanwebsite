@@ -5,11 +5,11 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 import headerimage from "../img/headerimg1.png";
-import client1 from '../img/clients/client1.png';
 import eaglelogo from '../img/clients/eaglelogo.png';
 import medinel from '../img/clients/medinel.png';
 import eeagleex from '../img/clients/eeagleex.png';
-
+import baratas from '../img/clients/baratas.png';
+import edusphere from '../img/clients/edusphere.png';
 
 import solutionimg1 from "../img/solution1.png";
 import solutionimg2 from "../img/solution2.png";
@@ -130,7 +130,10 @@ const Frontpage = props => {
                         <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={eeagleex} companyname="EeagleEx"/>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
-                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={client1} companyname="Google"/>
+                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={edusphere} companyname="Edu Sphere"/>
+                    </Grid>
+                    <Grid item xs={12} sm={4} md={3}>
+                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={baratas} companyname="Baratas Telawi"/>
                     </Grid>
                 </Grid>
             </React.Fragment>
