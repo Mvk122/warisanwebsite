@@ -82,13 +82,10 @@ const HeaderAppBar = props => {
                                 <ListItemText primary="HOME"></ListItemText>
                             </ListItem>
                             <ListItem button>
-                                <ListItemText primary="SOLUTIONS"></ListItemText>
-                            </ListItem>
-                            <ListItem button>
                                 <ListItemText primary="TESTIMONIALS" onClick={() => history.push("/testimonials")}></ListItemText>
                             </ListItem>                            
                             <ListItem button>
-                                <ListItemText primary="BLOG"></ListItemText>
+                                <ListItemText primary="INSIGHTS"></ListItemText>
                             </ListItem>                            
                             <ListItem button onClick={() => history.push("/contact")}>
                                 <ListItemText primary="CONTACT US"></ListItemText>
