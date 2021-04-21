@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
         background: theme.palette.primary.main
     },
     appbaricon: {
-        fontSize: "40px",
+        width: "7%",
         color: "#00ADEE"
     },
     appButton: {
@@ -77,8 +77,7 @@ const HeaderAppBar = props => {
                     <div className={classes.drawerlist}>
                         <List>
                             <ListItem button onClick={()=> history.push("/")}>
-                                <ListItemIcon> <AccountBalanceIcon className={classes.appbaricon}/></ListItemIcon>
-                                <ListItemText primary="WARISAN STRATEGIC ADVISORY" />
+                                <ListItemIcon><img src={WarisanLogo} className={classes.appbaricon} /></ListItemIcon>
                             </ListItem>
                             <Divider className={classes.dividertheme} variant="middle"/>
                             <ListItem button onClick={()=> history.push("/")}>
@@ -115,9 +114,8 @@ const HeaderAppBar = props => {
                 </Link>
                 <div style={{ display:'flex'}}>
                     <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/")}>HOME</Button>
-                    <Button color="inherit" className={classes.appButton} >SOLUTIONS</Button>
                     <Button color="inherit" className={classes.appButton} onClick={() => history.push("/testimonials")}>TESTIMONIALS</Button>
-                    <Button color="inherit" className={classes.appButton} >BLOG</Button>
+                    <Button color="inherit" className={classes.appButton} >INSIGHTS</Button>
                     <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/contact")}>CONTACT</Button>
                 </div>
                 </Toolbar>

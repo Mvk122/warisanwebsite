@@ -61,10 +61,12 @@ const useStyles = makeStyles((theme) => ({
             backgroundColor: "transparent"
         },
         [theme.breakpoints.up('md')] : {
+            display: "flex",
             paddingLeft: theme.spacing(10),
             paddingRight: theme.spacing(10),
             paddingTop: theme.spacing(2),
             backgroundColor: "transparent",
+            height: "100%"
         }
     },
     herodiv : {
@@ -143,26 +145,26 @@ const Frontpage = props => {
     function Solutions() {
         return (
             <React.Fragment>
-                <Grid container spacing={5} direction="row" justify="stretch" alignItems="stretch" className={classes.servicesgrid}>
-                    <Grid item xs={12} sm={6} md={3}>
+                <Grid container spacing={5} direction="row" justify="center" alignItems="stretch" className={classes.servicesgrid}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Solution solutionText="Data Analytics & Business Insights"
                             solutionDescription="We help you clean, filter, and visualise data gathered from business operations. Our team will provide a comprehensive report and advise on business insights, trends and patterns enabling you to make better decisions."
                             solutionImg={solutionimg1}
                             taglines={["Big Data Analytics", "Inventory Management", "Agile Development", "Data Migration"]}/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={3}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Solution solutionText="Digital Media Management"
                             solutionDescription="Our Digital Nurturing Programme builds and manages your e-commerce & digital presence and marketing platforms. This includes a custom e-commerce enabled website, Shopee, Lazada, Facebook, Instagram, Twitter, TikTok, YouTube, Spotify and more." 
                             solutionImg={solutionimg2}
                             taglines={["Website Development", "SEO Management", "Digital Marketting", "Media Production", "Web Security", "Custom Software Solutions", "Content Management Services", "e-Commerce Solutions"]}/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={3}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Solution solutionText="Warisan Business Suite"
                             solutionDescription="Our flagship solution designed for fledgling companies. WBS audits and optimises all business functions. It is ideal for SMEs and Start-Ups looking for an affordable and effective all-in-one solution that handles all their strategic, management, marketing and digital needs."
                             solutionImg={solutionimg3}
                             taglines={["Business Consultation", "Finance Consultation", "Business Registration"]}/>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={3}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <Solution solutionText="Distribution Optimisation"
                             solutionDescription="Sales are the lifeblood of any SME. Our Distribution Optimisation solution audits, optimises and transforms your sales function. It is ideal for retail focused SMEs in the launch-phase or looking to expand."
                             solutionImg={solutionimg3}

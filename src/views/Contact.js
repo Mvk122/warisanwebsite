@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
         width: "100%",
     },
     inputtheme: {
-        color: "#ffffe3"
     },
     submitbutton: {
         width: "100%",
