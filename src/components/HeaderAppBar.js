@@ -6,7 +6,6 @@ import Link from '@material-ui/core/Link';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -18,7 +17,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { ListItemIcon } from '@material-ui/core';
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 
 import WarisanLogo from '../img/WSALOGO1.png';
 
@@ -77,7 +75,7 @@ const HeaderAppBar = props => {
                     <div className={classes.drawerlist}>
                         <List>
                             <ListItem button onClick={()=> history.push("/")}>
-                                <ListItemIcon><img src={WarisanLogo} className={classes.appbaricon} /></ListItemIcon>
+                                <ListItemIcon><img src={WarisanLogo} className={classes.appbaricon} alt="home" /></ListItemIcon>
                             </ListItem>
                             <Divider className={classes.dividertheme} variant="middle"/>
                             <ListItem button onClick={()=> history.push("/")}>
@@ -110,7 +108,7 @@ const HeaderAppBar = props => {
                     <MenuIcon />
                 </IconButton>
                 <Link href="/">
-                    <img src={WarisanLogo} className={classes.logo} />
+                    <img src={WarisanLogo} className={classes.logo} alt="Warisan Logo" />
                 </Link>
                 <div style={{ display:'flex'}}>
                     <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/")}>HOME</Button>

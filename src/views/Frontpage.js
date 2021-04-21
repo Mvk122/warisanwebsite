@@ -14,6 +14,8 @@ import edusphere from '../img/clients/edusphere.png';
 import solutionimg1 from "../img/solution1.png";
 import solutionimg2 from "../img/solution2.png";
 import solutionimg3 from "../img/solution3.png";
+import solutionimg4 from "../img/solution4.png";
+
 
 import Grid from '@material-ui/core/Grid';
 
@@ -167,7 +169,7 @@ const Frontpage = props => {
                     <Grid item xs={12} sm={6} md={4}>
                         <Solution solutionText="Distribution Optimisation"
                             solutionDescription="Sales are the lifeblood of any SME. Our Distribution Optimisation solution audits, optimises and transforms your sales function. It is ideal for retail focused SMEs in the launch-phase or looking to expand."
-                            solutionImg={solutionimg3}
+                            solutionImg={solutionimg4}
                             taglines={["Business Consultation", "Finance Consultation", "Business Registration"]}/>
                     </Grid>
                 </Grid>
