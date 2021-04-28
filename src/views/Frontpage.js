@@ -10,6 +10,10 @@ import medinel from '../img/clients/medinel.png';
 import eeagleex from '../img/clients/eeagleex.png';
 import baratas from '../img/clients/baratas.png';
 import edusphere from '../img/clients/edusphere.png';
+import crave from '../img/clients/crave.png';
+import gusteau from '../img/clients/gusteau.png';
+import alhimaya from '../img/clients/alhimaya.png';
+import ptdaya from '../img/clients/ptdaya.png';
 
 import solutionimg1 from "../img/solution1.png";
 import solutionimg2 from "../img/solution2.png";
@@ -120,24 +124,36 @@ const Frontpage = props => {
                     <Grid item xs={12}>
                     <div style={{textAlign:"center"}}>
                         <Typography variant="h2" gutterBottom >
-                            Our Previous Clients
+                            Our Clients
                         </Typography>
                     </div>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
-                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={eaglelogo} companyname="Eagle Eyes Water"/>
+                        <Client link="adhadhaskdjads" description="" logo={eaglelogo} companyname="Eagle Eyes Water"/>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
-                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={medinel} companyname="Medinel"/>
+                        <Client link="adhadhaskdjads" description="" logo={edusphere} companyname="Edu Sphere"/>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
-                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={eeagleex} companyname="EeagleEx"/>
+                        <Client link="adhadhaskdjads" description="" logo={baratas} companyname="Baratas Telawi"/>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
-                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={edusphere} companyname="Edu Sphere"/>
+                        <Client link="adhadhaskdjads" description="" logo={medinel} companyname="Medinel"/>
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
-                        <Client link="adhadhaskdjads" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget felis dui. Suspendisse aliquet nibh " logo={baratas} companyname="Baratas Telawi"/>
+                        <Client link="adhadhaskdjads" description="" logo={ptdaya} companyname="P.T Daya Taka Kreasi Bersama"/>
+                    </Grid>
+                    <Grid item xs={12} sm={4} md={3}>
+                        <Client link="adhadhaskdjads" description="" logo={crave} companyname="Crave Georgetown"/>
+                    </Grid>
+                    <Grid item xs={12} sm={4} md={3}>
+                        <Client link="adhadhaskdjads" description="" logo={alhimaya} companyname="Al Himaya"/>
+                    </Grid>
+                    <Grid item xs={12} sm={4} md={3}>
+                        <Client link="adhadhaskdjads" description="" logo={eeagleex} companyname="EeagleEx"/>
+                    </Grid>
+                    <Grid item xs={12} sm={4} md={3}>
+                        <Client link="adhadhaskdjads" description="" logo={gusteau} companyname="Gusteau"/>
                     </Grid>
                 </Grid>
             </React.Fragment>
@@ -149,28 +165,28 @@ const Frontpage = props => {
             <React.Fragment>
                 <Grid container spacing={5} direction="row" justify="center" alignItems="stretch" className={classes.servicesgrid}>
                     <Grid item xs={12} sm={6} md={4}>
-                        <Solution solutionText="Data Analytics & Business Insights"
-                            solutionDescription="We help you clean, filter, and visualise data gathered from business operations. Our team will provide a comprehensive report and advise on business insights, trends and patterns enabling you to make better decisions."
-                            solutionImg={solutionimg1}
-                            taglines={["Big Data Analytics", "Inventory Management", "Agile Development", "Data Migration"]}/>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
-                        <Solution solutionText="Digital Media Management"
-                            solutionDescription="Our Digital Nurturing Programme builds and manages your e-commerce & digital presence and marketing platforms. This includes a custom e-commerce enabled website, Shopee, Lazada, Facebook, Instagram, Twitter, TikTok, YouTube, Spotify and more." 
-                            solutionImg={solutionimg2}
-                            taglines={["Website Development", "SEO Management", "Digital Marketting", "Media Production", "Web Security", "Custom Software Solutions", "Content Management Services", "e-Commerce Solutions"]}/>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4}>
                         <Solution solutionText="Warisan Business Suite"
                             solutionDescription="Our flagship solution designed for fledgling companies. WBS audits and optimises all business functions. It is ideal for SMEs and Start-Ups looking for an affordable and effective all-in-one solution that handles all their strategic, management, marketing and digital needs."
                             solutionImg={solutionimg3}
-                            taglines={["Business Consultation", "Finance Consultation", "Business Registration"]}/>
+                            taglines={["Marketing Strategy", "Sales Strategy", "HR Strategy", "IT Strategy", "Strategy Implementation", "On Call 24/7"]}/>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Solution solutionText="Digital Nurturing"
+                            solutionDescription="Our Digital Nurturing Programme builds and manages your e-commerce & digital presence and marketing platforms. This includes a custom e-commerce enabled website, Shopee, Lazada, Facebook, Instagram, Twitter, TikTok, YouTube, Spotify and more." 
+                            solutionImg={solutionimg2}
+                            taglines={["Digital Marketing Strategy", "Website Development", "Website Management", "Search Engine Optimisation", "E-Commerce Solutions", "Shopee & Lazada Integrations", "Shopee & Lazada Management", "Copywriting", "Graphic Design", "Funnel Building"]}/>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <Solution solutionText="Distribution Optimisation"
                             solutionDescription="Sales are the lifeblood of any SME. Our Distribution Optimisation solution audits, optimises and transforms your sales function. It is ideal for retail focused SMEs in the launch-phase or looking to expand."
                             solutionImg={solutionimg4}
-                            taglines={["Business Consultation", "Finance Consultation", "Business Registration"]}/>
+                            taglines={["Sales Strategy", "Operations Optimisation"]}/>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Solution solutionText="Data Analytics & Business Insights"
+                            solutionDescription="We help you clean, filter, and visualise data gathered from business operations. Our team will provide a comprehensive report and advise on business insights, trends and patterns enabling you to make better decisions."
+                            solutionImg={solutionimg1}
+                            taglines={["Data Analytics & Business Insights", "Data Cleaning", "Data Scraping", "Data Visualisations", "Big Data Analytics", "Data Migration", "Agile Development", "Analytics Reports", "Insight Reports"]}/>
                     </Grid>
                 </Grid>
             </React.Fragment>
@@ -182,7 +198,7 @@ const Frontpage = props => {
             <Helmet>
                 <title>Home | Warisan Strategic Advisory</title>
                 <meta property="og:title" content="Home | Warisan Strategic Avisory" />
-                <meta property="og:description" content=" Warisan Strategic Advisory is a consulting firm that offers affordable rates to Malaysian SME's, specialising in digital nurturing, marketting, big data analytics, first step solutions and more!" />
+                <meta property="og:description" content=" Warisan Strategic Advisory is a consulting firm that offers affordable rates to Malaysian SME's, specialising in digital nurturing, marketing, big data analytics, first step solutions and more!" />
             </Helmet>
             <HeaderAppBar />
             <Grid container spacing={1} direction="row" justify="flex-start" alignItems="flex-start" className={classes.itemgrid}>

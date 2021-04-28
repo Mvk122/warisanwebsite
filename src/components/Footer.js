@@ -10,6 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 import constants from '../constants.js';
 
@@ -74,11 +75,14 @@ const Footer = props => {
                         <IconButton color="inherit" href={constants.linkdin} target="_blank" aria-label="Link to our Linkdin profile" rel="noreferrer">
                             <LinkedInIcon className={classes.icons} />
                         </IconButton>
-                        <IconButton color="inherit" aria-label="Link to our Whatsapp Business Contact" >
+                        <IconButton color="inherit" href={constants.whatsapplink} aria-label="Link to our Whatsapp Business Contact" >
                             <WhatsAppIcon className={classes.icons} />
                         </IconButton>
                         <IconButton color="inherit" href={constants.instagram} target="_blank" aria-label="Link to our Instagram" >
                             <InstagramIcon className={classes.icons} />
+                        </IconButton>
+                        <IconButton color="inherit" href={constants.facebook} target="_blank" aria-label="Link to our Facebook" >
+                            <FacebookIcon className={classes.icons} />
                         </IconButton>
                     </div>
                 </Grid>

@@ -23,7 +23,7 @@ import WarisanLogo from '../img/WSALOGO1.png';
 
 const useStyles = makeStyles((theme) => ({
     header: {
-        color: "#00ADEE",
+        color: "#00A551",
         background: "transparent",
         boxShadow: "none",
         width: "100%",
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     },
     appbaricon: {
         width: "7%",
-        color: "#00ADEE"
+        color: "#00A551"
     },
     appButton: {
         [theme.breakpoints.down('xs')]: { display: 'none', }
@@ -81,9 +81,9 @@ const HeaderAppBar = props => {
                             <ListItem button onClick={()=> history.push("/")}>
                                 <ListItemText primary="HOME"></ListItemText>
                             </ListItem>
-                            <ListItem button>
-                                <ListItemText primary="TESTIMONIALS" onClick={() => history.push("/testimonials")}></ListItemText>
-                            </ListItem>                            
+                            <ListItem button onClick={()=> history.push("/services")}>
+                                <ListItemText primary="SERVICES"></ListItemText>
+                            </ListItem>                      
                             <ListItem button>
                                 <ListItemText primary="INSIGHTS" onClick={() => history.push("/insights")}></ListItemText>
                             </ListItem>                            
@@ -109,7 +109,7 @@ const HeaderAppBar = props => {
                 </Link>
                 <div style={{ display:'flex'}}>
                     <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/")}>HOME</Button>
-                    <Button color="inherit" className={classes.appButton} onClick={() => history.push("/testimonials")}>TESTIMONIALS</Button>
+                    <Button color="inherit" className={classes.appButton} onClick={() => history.push("/services")}>SERVICES</Button>
                     <Button color="inherit" className={classes.appButton} onClick={() => history.push("/insights")}>INSIGHTS</Button>
                     <Button color="inherit" className={classes.appButton} onClick={()=> history.push("/contact")}>CONTACT</Button>
                 </div>

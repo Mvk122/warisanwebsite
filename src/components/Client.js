@@ -32,8 +32,8 @@ function Client({description, link, logo, companyname}) {
     }
 
     return (
-        <Box border={boxwidth} borderColor="primary.main" borderRadius={16} onMouseEnter={()=> mouseOverEvent(true)} onMouseLeave={()=> mouseOverEvent(false)} onClick={()=> console.log("swag")}>
-        <Link href="/testimonials" color="inherit" style={{ textDecoration: 'none' }}>
+        <Box border={boxwidth} borderColor="primary.main" borderRadius={16} onMouseEnter={()=> mouseOverEvent(true)} onMouseLeave={()=> mouseOverEvent(false)}>
+        <Link href="/" color="inherit" style={{ textDecoration: 'none' }}>
         <div className={classes.client}>
             <img src={logo} alt="company logo" style={{resizeMode:"contain", flex:1, maxWidth:"100%", maxHeight:"20em"}}/>
             <Typography variant="h6" gutterBottom>

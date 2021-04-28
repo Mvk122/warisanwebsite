@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 import HeaderAppBar from '../components/HeaderAppBar';
 import Footer from '../components/Footer.js';
@@ -70,6 +70,7 @@ const Contact = props => {
                 message: message
             })
         }).then(response => response.json()).then(data => setResponsemessage("Your message has been delivered to us, we will contact you by email shortly!"))
+        setResponsemessage("Your message has been delivered to us, we will contact you by email shortly!")
         setName("");
         setEmail("");
         setSubject("");
@@ -102,9 +103,9 @@ const Contact = props => {
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <div style={{textAlign:"center"}}>
-                        <LocationOnIcon className={classes.icons} />
+                        <WhatsAppIcon className={classes.icons} />
                         <Typography variant="subtitle1" gutterBottom>
-                            {constants.location}
+                            {constants.whatsapp}
                         </Typography>
                     </div>                    
                 </Grid>
@@ -122,22 +123,22 @@ const Contact = props => {
                     <form noValidate autoComplete="off" onSubmit={handleSubmit}>
                     <Grid item xs={12}>
                         <div style={{padding:"5px", width:"100%"}}>
-                        <TextField label="YOUR NAME" id="name" variant="filled" value={name} onInput={e=> setName(e.target.value)} InputProps={{className: classes.inputtheme}} className={classes.textentry}/>
+                        <TextField label="YOUR NAME" id="name" variant="outlined" value={name} onInput={e=> setName(e.target.value)} InputProps={{className: classes.inputtheme}} className={classes.textentry}/>
                         </div>                    
                     </Grid>
                     <Grid item xs={12}>
                         <div style={{padding:"5px"}}>
-                        <TextField label="YOUR EMAIL ADDRESS" id="email" variant="filled" value={email} onInput={e=> setEmail(e.target.value)} InputProps={{className: classes.inputtheme}} className={classes.textentry}/>
+                        <TextField label="YOUR EMAIL ADDRESS" id="email" variant="outlined" value={email} onInput={e=> setEmail(e.target.value)} InputProps={{className: classes.inputtheme}} className={classes.textentry}/>
                         </div>                    
                     </Grid>
                     <Grid item xs={12}>
                         <div style={{padding:"5px"}}> 
-                        <TextField label="SUBJECT" variant="filled" id="subject" value={subject} onInput={e=> setSubject(e.target.value)} InputProps={{className: classes.inputtheme}} className={classes.textentry}/>
+                        <TextField label="SUBJECT" variant="outlined" id="subject" value={subject} onInput={e=> setSubject(e.target.value)} InputProps={{className: classes.inputtheme}} className={classes.textentry}/>
                         </div>                    
                     </Grid>
                     <Grid item xs={12}>
                         <div style={{padding:"5px"}}> 
-                        <TextField label="MESSAGE" id="message" multiline rows={6}variant="filled" value={message} onInput={e=> setMessage(e.target.value)} InputProps={{className: classes.inputtheme}} className={classes.textentry}/>
+                        <TextField label="MESSAGE" id="message" multiline rows={6}variant="outlined" value={message} onInput={e=> setMessage(e.target.value)} InputProps={{className: classes.inputtheme}} className={classes.textentry}/>
                         </div>                    
                     </Grid>
                     <Grid item xs={12}>

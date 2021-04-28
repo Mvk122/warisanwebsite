@@ -6,7 +6,7 @@ const theme = createMuiTheme({
             main: '#652D90'
         },
         background: {
-            default: "#ebebeb"
+            default: "#ffffff"
         },
         secondary: {
             main: "#00A551"
@@ -16,7 +16,7 @@ const theme = createMuiTheme({
         }
     },
     typography: {
-        "fontFamily": `"Roboto", "Helvetica", "Arial", sans-serif`,
+        "fontFamily": `"Ubuntu", "Helvetica", "Arial", sans-serif`,
         "fontSize": 14,
         "fontWeightLight": 300,
         "fontWeightRegular": 400,
@@ -24,6 +24,18 @@ const theme = createMuiTheme({
         allVariants : {
             color: "#652D90" 
         },
+        h2: {
+            "fontFamily": `"Audiowide", "Helvetica", "Arial", sans-serif`,
+        },
+        h3: {
+            "fontFamily": `"Audiowide", "Helvetica", "Arial", sans-serif`,
+        },
+        h4: {
+            "fontFamily": `"Audiowide", "Helvetica", "Arial", sans-serif`,
+        },
+        button : {
+            "fontFamily": `"Audiowide", "Helvetica", "Arial", sans-serif`,
+        }
     },
 }
 )
