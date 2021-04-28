@@ -62,9 +62,16 @@ const Footer = props => {
                         </Typography>
                         <Typography variant="subtitle1" gutterBottom>
                             <Link href="/contact" color="inherit">
-                                Contact Us
+                                Contact Us 
+                            </Link>
+                            <Link href="/services" color="inherit" style={{paddingLeft:"1em"}}>
+                                Our Services
+                            </Link>
+                            <Link href="/insights" color="inherit" style={{paddingLeft:"1em"}}>
+                                Warisan Insights
                             </Link>
                         </Typography>
+                        
                         <Typography variant="subtitle1" gutterBottom>
                             Created by Madhav Khandhar
                         </Typography>

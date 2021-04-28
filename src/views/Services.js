@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import { Helmet } from "react-helmet"
 
 import HeaderAppBar from "../components/HeaderAppBar";
 import Footer from "../components/Footer";
@@ -65,6 +66,11 @@ const Services = props => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
+            <Helmet>
+                <title>Services | Warisan Strategic Advisory</title>
+                <meta property="og:title" content="Services | Warisan Strategic Advisory" />
+                <meta property="og:description" content="Use Warisan's large array of strategy, IT, creative and data analytics tools to improve your business." />
+            </Helmet>
             <HeaderAppBar />
             <div style={{textAlign: "center"}}>
                 <Typography variant="h2" gutterBottom>

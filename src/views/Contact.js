@@ -81,7 +81,7 @@ const Contact = props => {
         <div className={classes.root}>
             <Helmet>
                 <title>Contact | Warisan Strategic Advisory</title>
-                <meta property="og:title" content="Home | Warisan Strategic Avisory" />
+                <meta property="og:title" content="Home | Warisan Strategic Advisory" />
                 <meta property="og:description" content="Get in contact with Warisan Strategic Advisory to optimise your SME business for the new 4th industrial revolution" />
             </Helmet>
             <HeaderAppBar />
