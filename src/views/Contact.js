@@ -55,10 +55,21 @@ const Contact = props => {
     const [message, setMessage] = useState("")
     const [responsemessage, setResponsemessage] = useState("")
 
-    //TODO make this functional
+    //TODO : add error handling to this
     function handleSubmit(event){
         event.preventDefault();
-        setResponsemessage("Your message has been delivered to us, we will contact you by email shortly!");
+        fetch(constants.backend + "/contact/", {
+            method: 'POST',
+            headers: {
+                'content-type' : 'application/json',
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                subject: subject,
+                message: message
+            })
+        }).then(response => response.json()).then(data => setResponsemessage("Your message has been delivered to us, we will contact you by email shortly!"))
         setName("");
         setEmail("");
         setSubject("");
