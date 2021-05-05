@@ -91,7 +91,7 @@ const Services = props => {
                         <Service header="IT" description="Reduce computational cost and complexity by consulting with our IT Strategists on a compute architecture specific for your business." icon={<ComputerIcon color="primary" className={classes.icon}/>} />
                     </Grid>
                     <Grid item xs={6} sm={4} md={3}>
-                        <Service header="Human Resources" description="Human Resource strategy implementation." icon={<AccessibilityNewIcon color="primary" className={classes.icon}/>} />
+                        <Service header="Human Resources" description="Our HR Strategy helps you find the right people to accelerate your business growth. Through our proprietary Talent Development Framework, we empower, upskill, and grow your workforce to maintain your competitive advantage. " icon={<AccessibilityNewIcon color="primary" className={classes.icon}/>} />
                     </Grid>
                     <Grid item xs={6} sm={4} md={3}>
                         <Service header="Digital Marketing" description="Digitally empower and reach a wider target audience by marketing your business to consumers over the internet." icon={<MonetizationOnIcon color="primary" className={classes.icon}/>} />

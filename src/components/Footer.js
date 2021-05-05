@@ -73,7 +73,7 @@ const Footer = props => {
                         </Typography>
                         
                         <Typography variant="subtitle1" gutterBottom>
-                            Created by Madhav Khandhar
+                            Created by Warisan Strategic Advisory
                         </Typography>
                     </div>
                 </Grid>

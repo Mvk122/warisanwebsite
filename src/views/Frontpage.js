@@ -19,6 +19,8 @@ import solutionimg1 from "../img/solution1.png";
 import solutionimg2 from "../img/solution2.png";
 import solutionimg3 from "../img/solution3.png";
 import solutionimg4 from "../img/solution4.png";
+import solutionimg5 from "../img/solution5.png";
+
 
 
 import Grid from '@material-ui/core/Grid';
@@ -188,10 +190,16 @@ const Frontpage = props => {
                             solutionImg={solutionimg1}
                             taglines={["Data Analytics & Business Insights", "Data Cleaning", "Data Scraping", "Data Visualisations", "Big Data Analytics", "Data Migration", "Agile Development", "Analytics Reports", "Insight Reports"]}/>
                     </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                        <Solution solutionText="Startup Accelerator"
+                            solutionDescription="Our Start-Up Accelerator enables creative entrepreneurs to extract maximal value from their efforts. We provide a comprehensive suite of solutions to catalyse the formative stage of a new business ranging from IT, Finance, Accounting, Management, Marketing and more. The primary focus is to graduate our Start-Up clients to their 1st Seed Funding Round via our venture capital/private equity partners."
+                            solutionImg={solutionimg5}
+                            taglines={["Financial Modelling", "Legal expertise", "Accounting", "Venture Capital Consultation", "HR Strategy"]}/>
+                    </Grid>
                 </Grid>
             </React.Fragment>
         )
-    }
+    } 
 
     return (
         <div className={classes.root}>
